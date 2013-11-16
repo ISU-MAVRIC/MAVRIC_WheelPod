@@ -1,4 +1,4 @@
-update=11/16/2013 3:41:29 PM
+update=11/16/2013 3:56:00 PM
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -22,7 +22,7 @@ BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
 LibName1=Aerodyne_v2
-LibDir=../KiCadLib
+LibDir=../../KiCadLib
 [general]
 version=1
 [eeschema]
