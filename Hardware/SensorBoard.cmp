@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/21/2013 6:00:37 PM
+
+BeginCmp
+TimeStamp = /5287F742;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528BE916;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528BE9D6;
+Reference = C3;
+ValeurCmp = 0.1uF;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287F78E;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528BE63E;
+Reference = C5;
+ValeurCmp = 0.056uF;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528E8CF3;
+Reference = C6;
+ValeurCmp = 20pF;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528E964C;
+Reference = C7;
+ValeurCmp = 20pF;
+IdModule  = CAPC1608-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528E8E3E;
+Reference = J1;
+ValeurCmp = CONN-4;
+IdModule  = HDRV4W38P254_4X1-SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /528E8E4D;
+Reference = J2;
+ValeurCmp = CONN-4;
+IdModule  = HDRV4W38P254_4X1-SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287F733;
+Reference = L1;
+ValeurCmp = L;
+IdModule  = IND-COIL-550;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287E9D6;
+Reference = U1;
+ValeurCmp = LDC1000;
+IdModule  = SON50P500X400-17N;
+EndCmp
+
+BeginCmp
+TimeStamp = /528E8CC9;
+Reference = X1;
+ValeurCmp = 8MHz;
+IdModule  = XTAL-2SMD-50X32;
+EndCmp
+
+EndListe

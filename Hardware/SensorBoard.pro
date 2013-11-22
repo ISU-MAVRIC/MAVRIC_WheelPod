@@ -1,19 +1,5 @@
-update=11/21/2013 4:48:09 PM
-version=1
+update=11/21/2013 4:47:49 PM
 last_client=pcbnew
-[general]
-version=1
-[eeschema]
-version=1
-LibDir=../../KiCadLib
-NetFmtName=
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
-[eeschema/libraries]
-LibName1=power
-LibName2=Aerodyne_v2
 [cvpcb]
 version=1
 NetIExt=net
@@ -21,7 +7,7 @@ NetIExt=net
 EquName1=devcms
 [pcbnew]
 version=1
-LastNetListRead=SensorBoard.net
+LastNetListRead=
 UseCmpFile=1
 PadDrill=0.600000000000
 PadDrillOvalY=0.600000000000
