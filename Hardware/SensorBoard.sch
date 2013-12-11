@@ -1,14 +1,14 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:Aerodyne_v2
-LIBS:WheelPod-cache
+LIBS:SensorBoard-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "22 nov 2013"
+Date "10 dec 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -356,7 +356,7 @@ F 1 "CONN-4" H 3800 2000 60  0000 C CNN
 F 2 "~" H 3800 2250 60  0000 C CNN
 F 3 "~" H 3800 2250 60  0000 C CNN
 	1    3800 2250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L GND #PWR09

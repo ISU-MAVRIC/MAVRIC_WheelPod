@@ -1,5 +1,5 @@
-update=11/21/2013 4:47:49 PM
-last_client=pcbnew
+update=11/25/2013 10:02:25 AM
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -27,3 +27,14 @@ ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
 LibDir=../../KiCadLib
 LibName1=Aerodyne_v2
+[eeschema]
+version=1
+LibDir=../../KiCadLib
+NetFmtName=
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
+[eeschema/libraries]
+LibName1=power
+LibName2=Aerodyne_v2

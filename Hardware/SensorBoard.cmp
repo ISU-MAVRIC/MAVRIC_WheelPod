@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/21/2013 6:00:37 PM
+Cmp-Mod V01 Created by PcbNew date = 12/10/2013 3:31:40 PM
 
 BeginCmp
 TimeStamp = /5287F742;
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /5287F733;
 Reference = L1;
 ValeurCmp = L;
-IdModule  = IND-COIL-550;
+IdModule  = IND-COIL-750;
 EndCmp
 
 BeginCmp
