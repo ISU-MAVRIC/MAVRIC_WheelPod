@@ -1,16 +1,26 @@
 #include <Servo.h> 
  
 Servo myservo;  // create servo object to control a servo 
-int pos = 30;
  
 void setup() 
 { 
-  myservo.attach(3);
+  pinMode(13, OUTPUT);
+  myservo.write(90);
+  myservo.attach(6,1000,2000);
+
 } 
  
  
 void loop() 
 { 
-  myservo.write(pos);
-  delay(30);
+  //digitalWrite(13, HIGH);
+  int temp = 0;
+  while(temp >-1) temp++;
+  
+  //digitalWrite(13, LOW);
+  while (true)
+  {
+    myservo.write(10);
+    delay(200);
+  }
 } 
