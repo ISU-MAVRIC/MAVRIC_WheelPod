@@ -8,12 +8,14 @@
 #include <PID_v1.h>
 
 //Define Variables we'll be connecting to
-double Setpoint, input, rawOutput;
+double setPoint, input, rawOutput;
 double rawInput, output;
 
 //Specify the links and initial tuning parameters
-//Input 102-1023
-PID myPID(&input, &rawOutput, &Setpoint,1,0,.2, DIRECT);
+//Input range 102-1023
+PID myPID(&input, &rawOutput, &setPoint,1.5,0,0, DIRECT);
+
+String dataString;
 
 SyRenSimplified SR(Serial2);
 
@@ -23,7 +25,7 @@ void setup()
   Serial2.begin(9600);
   //initialize the variables we're linked to
   rawInput = analogRead(0);
-  Setpoint = 900;
+  setPoint = 900;
 
   //turn the PID on
   myPID.SetOutputLimits(-127,127);
@@ -41,6 +43,18 @@ void loop()
   Serial.print(input);
   Serial.print("\t Output: ");
   Serial.println(intrawOutput);
+  /*if (Serial.available() > 0)
+  {
+    int serialData = Serial.read();
+    if (serialData == 'u')
+    {
+      setPoint = setPoint + 150;
+    }
+    else if (serialData == 'd')
+    {
+      setPoint = setPoint - 150;
+    }
+  }*/
 }
 
 
