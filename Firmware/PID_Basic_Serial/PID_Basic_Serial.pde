@@ -15,9 +15,12 @@ double rawInput, output;
 //Input range 102-1023
 PID myPID(&input, &rawOutput, &setPoint,1.5,0,0, DIRECT);
 
-String dataString;
+//String dataString;
 
 SyRenSimplified SR(Serial2);
+
+  char received[3];
+  int i = 0;
 
 void setup()
 {
@@ -25,7 +28,7 @@ void setup()
   Serial2.begin(9600);
   //initialize the variables we're linked to
   rawInput = analogRead(0);
-  setPoint = 900;
+  setPoint = 300;
 
   //turn the PID on
   myPID.SetOutputLimits(-127,127);
@@ -43,18 +46,23 @@ void loop()
   Serial.print(input);
   Serial.print("\t Output: ");
   Serial.println(intrawOutput);
-  /*if (Serial.available() > 0)
+  
+
+  if(Serial.available() > 0)
   {
-    int serialData = Serial.read();
-    if (serialData == 'u')
+    char ch = Serial.read();
+    if(i <= 2 && isDigit(ch))
     {
-      setPoint = setPoint + 150;
+      received[i++] = ch;
     }
-    else if (serialData == 'd')
+    else
     {
-      setPoint = setPoint - 150;
+      received[i] = ch;
+      setPoint = atoi(received);
+      Serial.println(setPoint);
+      i = 0;
     }
-  }*/
+  }
 }
 
 
