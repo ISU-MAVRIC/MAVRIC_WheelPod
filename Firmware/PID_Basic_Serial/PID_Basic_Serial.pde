@@ -12,8 +12,8 @@ double setPoint, input, rawOutput;
 double rawInput, output;
 
 //Specify the links and initial tuning parameters
-//Input range 102-1023
-PID myPID(&input, &rawOutput, &setPoint,1.5,0,0, DIRECT);
+//Input range 00008-1023
+PID myPID(&input, &rawOutput, &setPoint,1.2,0,0, DIRECT);
 
 //String dataString;
 
