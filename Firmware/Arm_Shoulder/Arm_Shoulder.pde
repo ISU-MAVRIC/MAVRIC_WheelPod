@@ -15,12 +15,7 @@ double rawInput, output;
 //Input range 00008-1023
 PID myPID(&input, &rawOutput, &setPoint,1.2,0,0, DIRECT);
 
-//String dataString;
-
 SyRenSimplified SR(Serial2);
-
-  char received[3];
-  int i = 0;
 
 void setup()
 {
@@ -40,29 +35,24 @@ void loop()
   rawInput = analogRead(0);
   input = map(rawInput,102,1023,0,1023);
   myPID.Compute();
-  int intrawOutput = (int) rawOutput;
-  SR.motor(intrawOutput);
+  SR.motor((int) rawOutput);
   Serial.print("Input: ");
   Serial.print(input);
   Serial.print("\t Output: ");
   Serial.println(intrawOutput);
-  
 
+  //receive 4 digit long integer over serial
   if(Serial.available() > 0)
   {
-    char ch = Serial.read();
-    if(i <= 2 && isDigit(ch))
+    char received[3];
+    for (int i = 0; i <= 4; i++)
     {
-      received[i++] = ch;
+      char ch = Serial.read();
+      received[i] = ch; 
     }
-    else
-    {
-      received[i] = ch;
-      setPoint = atoi(received);
-      Serial.println(setPoint);
-      i = 0;
-    }
+    setPoint = atoi(received);
   }
 }
+
 
 
