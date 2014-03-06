@@ -39,7 +39,7 @@ void loop()
   Serial.print("Input: ");
   Serial.print(input);
   Serial.print("\t Output: ");
-  Serial.println(intrawOutput);
+  Serial.println((int) rawOutput);
 
   //receive 4 digit long integer over serial
   if(Serial.available() > 0)
