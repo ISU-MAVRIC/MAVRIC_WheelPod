@@ -39,20 +39,28 @@ void loop()
   Serial.print("Input: ");
   Serial.print(input);
   Serial.print("\t Output: ");
-  Serial.println((int) rawOutput);
+  Serial.print((int) rawOutput);
+  Serial.print("\t Setpoint: ");
+  Serial.println(setPoint);
 
-  //receive 4 digit long integer over serial
-  if(Serial.available() > 0)
+  //receive packet and process
+
+  if(Serial.available() >= 18)
   {
-    char received[3];
-    for (int i = 0; i <= 4; i++)
+    String received = "";
+    for (int i = 0; i <= 17; i++)
     {
       char ch = Serial.read();
-      received[i] = ch; 
+      received = received + ch;
     }
-    setPoint = atoi(received);
+    setPoint = received.substring(3,7).toInt();
+    //Serial.println(received);
+    //Serial.println(rxsetPoint);
+    //delay(4000);
   }
 }
+
+
 
 
 
