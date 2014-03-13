@@ -1,4 +1,4 @@
-#include <SyRenSimplified.h>
+#include <Sabertooth.h>
 
 /********************************************************
  * PID Basic Example
@@ -15,12 +15,13 @@ double rawInput, output;
 //Input range 00008-1023
 PID myPID(&input, &rawOutput, &setPoint,1.2,0,0, DIRECT);
 
-SyRenSimplified SR(Serial2);
+Sabertooth ST(128, Serial2);
 
 void setup()
 {
   Serial.begin(9600);
   Serial2.begin(9600);
+  ST.autobaud();
   //initialize the variables we're linked to
   rawInput = analogRead(0);
   setPoint = 300;
@@ -35,7 +36,7 @@ void loop()
   rawInput = analogRead(0);
   input = map(rawInput,102,1023,0,1023);
   myPID.Compute();
-  SR.motor((int) rawOutput);
+  ST.motor(1, (int) rawOutput);
   Serial.print("Input: ");
   Serial.print(input);
   Serial.print("\t Output: ");
