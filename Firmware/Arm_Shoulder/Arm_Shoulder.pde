@@ -2,47 +2,50 @@
 
 /********************************************************
  * PID Basic Example
- * Reading analog Input 0 to control analog PWM rawOutput 3
+ * Reading analog Input 0 to control analog PWM elbowRawOutput 3
  ********************************************************/
 
 #include <PID_v1.h>
 
 //Define Variables we'll be connecting to
-double setPoint, input, rawOutput;
-double rawInput, output;
+double elbowSetPoint, elbowInput, elbowRawOutput;
+double elbowRawInput, elboweRawOutput;
+
+int elbowPot = 7;
 
 //Specify the links and initial tuning parameters
 //Input range 00008-1023
-PID myPID(&input, &rawOutput, &setPoint,1.2,0,0, DIRECT);
+PID elbowPID(&elbowInput, &elbowRawOutput, &elbowSetPoint,1,.1,.3, DIRECT);
 
-Sabertooth ST(128, Serial2);
+Sabertooth ST(128, Serial1);
 
 void setup()
 {
   Serial.begin(9600);
-  Serial2.begin(9600);
+  Serial1.begin(9600);
   ST.autobaud();
   //initialize the variables we're linked to
-  rawInput = analogRead(0);
-  setPoint = 300;
+  elbowRawInput = analogRead(elbowPot);
+  elbowSetPoint = 300;
 
   //turn the PID on
-  myPID.SetOutputLimits(-127,127);
-  myPID.SetMode(AUTOMATIC);
+  elbowPID.SetOutputLimits(-127,127);
+  elbowPID.SetMode(AUTOMATIC);
 }
 
 void loop()
 {
-  rawInput = analogRead(0);
-  input = map(rawInput,102,1023,0,1023);
-  myPID.Compute();
-  ST.motor(1, (int) rawOutput);
+  elbowRawInput = analogRead(7);
+  //input = map(elbowRawInput,102,1023,0,1023);
+  elbowInput = elbowRawInput;
+  elbowPID.Compute();
+  ST.motor(1, (int) elbowRawOutput);
   Serial.print("Input: ");
-  Serial.print(input);
+  Serial.print(elbowInput);
   Serial.print("\t Output: ");
-  Serial.print((int) rawOutput);
+  Serial.print((int) elbowRawOutput);
   Serial.print("\t Setpoint: ");
-  Serial.println(setPoint);
+  Serial.println(elbowSetPoint);
 
   //receive packet and process
 
@@ -54,10 +57,9 @@ void loop()
       char ch = Serial.read();
       received = received + ch;
     }
-    setPoint = received.substring(3,7).toInt();
-    //Serial.println(received);
-    //Serial.println(rxsetPoint);
-    //delay(4000);
+    elbowSetPoint = received.substring(3,7).toInt();
+    Serial.print("\t" + received);
+    delay(1000);
   }
 }
 
