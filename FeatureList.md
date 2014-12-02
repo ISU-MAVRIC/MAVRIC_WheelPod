@@ -6,6 +6,8 @@
 - _Allegro MicroSystems ACS711ELCTR-25AB-T_
 - Inductance to Digital Converter
 - _Texas Instruments LDC1000_
+- 3.3v Regulator
+- _STMicroelectronics L78L33ACUTR_
 
 ## Features
 - Cat5 jack for input from Chipkit (RS-485, 3.3V, GND)
