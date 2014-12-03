@@ -8,6 +8,8 @@
 - _Texas Instruments LDC1000_
 - 3.3v Regulator
 - _STMicroelectronics L78L33ACUTR_
+- 5v Regulator (Required for analog voltage on LDC)
+- _STMicroelectronics L78M05CDT-TR_
 
 ## Features
 - Cat5 jack for input from Chipkit (RS-485, 3.3V, GND)
