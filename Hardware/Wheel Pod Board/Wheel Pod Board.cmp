@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 2/19/2015 10:50:47 PM
+
+BeginCmp
+TimeStamp = /54E6BCED;
+Reference = U1;
+ValeurCmp = STM32F401RCT6;
+IdModule  = Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm;
+EndCmp
+
+EndListe
