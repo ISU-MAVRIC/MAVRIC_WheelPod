@@ -4,6 +4,7 @@ LIBS:device
 LIBS:conn
 LIBS:Passives
 LIBS:MAVRIClib
+LIBS:Connectors
 LIBS:Wheel Pod Board-cache
 EELAYER 25 0
 EELAYER END

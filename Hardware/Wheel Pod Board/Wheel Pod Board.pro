@@ -1,4 +1,4 @@
-update=3/4/2015 10:36:09 PM
+update=3/5/2015 2:15:47 PM
 version=1
 last_client=kicad
 [general]
@@ -36,3 +36,4 @@ LibName2=device
 LibName3=conn
 LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
 LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+LibName6=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Connectors
