@@ -1,18 +1,32 @@
 #MicroXplorer Configuration settings - do not modify
-#Wed Mar 04 22:31:54 CST 2015
+#Wed Mar 04 22:33:11 CST 2015
 File.Version=4
 KeepUserPlacement=false
 Mcu.Family=STM32F4
 Mcu.IP0=NVIC
 Mcu.IP1=RCC
-Mcu.IPNb=2
+Mcu.IP2=USART1
+Mcu.IP3=USART2
+Mcu.IPNb=4
 Mcu.Name=STM32F401R(B-C-D-E)Tx
 Mcu.Package=LQFP64
-Mcu.PinsNb=0
+Mcu.Pin0=PA2
+Mcu.Pin1=PA3
+Mcu.Pin2=PA9
+Mcu.Pin3=PA10
+Mcu.PinsNb=4
 Mcu.UserName=STM32F401RCTx
 MxCube.Version=4.5.0
 NVIC.PriorityGroup=NVIC_PRIORITYGROUP_4
 NVIC.SysTick_IRQn=true\:0\:0\:false
+PA10.Mode=Asynchronous
+PA10.Signal=USART1_RX
+PA2.Mode=Asynchronous
+PA2.Signal=USART2_TX
+PA3.Mode=Asynchronous
+PA3.Signal=USART2_RX
+PA9.Mode=Asynchronous
+PA9.Signal=USART1_TX
 PCC.Family=STM32F4
 PCC.MCU=STM32F401R(B-C)Tx
 PCC.MXVersion=4.5.0
