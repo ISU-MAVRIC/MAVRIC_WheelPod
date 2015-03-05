@@ -1,0 +1,507 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Passives
+LIBS:MAVRIClib
+LIBS:Wheel Pod Board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AOZ1280CI U?
+U 1 1 54F863C5
+P 4700 5200
+F 0 "U?" H 4500 4850 60  0000 C CNN
+F 1 "AOZ1280CI" H 4500 5350 60  0000 C CNN
+F 2 "SMD_Packages:SOT-23-6" H 4700 5200 60  0001 C CNN
+F 3 "" H 4700 5200 60  0000 C CNN
+	1    4700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5300 6050 5300
+$Comp
+L GND #PWR?
+U 1 1 54F863CD
+P 5650 5900
+F 0 "#PWR?" H 5650 5650 60  0001 C CNN
+F 1 "GND" H 5650 5750 60  0000 C CNN
+F 2 "" H 5650 5900 60  0000 C CNN
+F 3 "" H 5650 5900 60  0000 C CNN
+	1    5650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5400 5400 5400
+Wire Wire Line
+	5400 5400 5400 5500
+Text HLabel 5400 5500 3    60   Input ~ 0
+REG+5VEN
+Wire Wire Line
+	4850 4550 4850 5200
+Wire Wire Line
+	3750 4550 4850 4550
+Wire Wire Line
+	4150 5400 3700 5400
+Wire Wire Line
+	3700 5300 3700 5750
+Connection ~ 3700 5400
+Wire Wire Line
+	3100 5300 3200 5300
+$Comp
+L DIODESCH D?
+U 1 1 54F863E2
+P 3850 4850
+F 0 "D?" V 3950 5050 60  0000 R CNN
+F 1 "DIODESCH" H 3750 5200 50  0001 C CNN
+F 2 "MAVRIC_footprints:Diode_MicroSMP" H 3850 4850 60  0001 C CNN
+F 3 "" H 3850 4850 60  0000 C CNN
+F 4 "Vishay Semiconductor" H 3850 4850 60  0001 C CNN "Manufacturer"
+F 5 "MSS2P3-M3/89A" V 3850 4850 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" V 3850 4850 60  0001 C CNN "Vendor"
+F 7 "MSS2P3-M3/89AGICT-ND" V 3850 4850 60  0001 C CNN "Vendor Part #"
+F 8 "30V" V 3850 5100 60  0000 R CNN "Reverse Voltage"
+F 9 "2A" V 3750 5050 60  0000 R CNN "Average Current"
+	1    3850 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54F863E9
+P 2750 5850
+F 0 "#PWR?" H 2750 5600 60  0001 C CNN
+F 1 "GND" H 2750 5700 60  0000 C CNN
+F 2 "" H 2750 5850 60  0000 C CNN
+F 3 "" H 2750 5850 60  0000 C CNN
+	1    2750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4550 3250 4550
+Wire Wire Line
+	2750 4950 2750 4550
+Connection ~ 2750 4550
+Wire Wire Line
+	4150 5300 4000 5300
+Wire Wire Line
+	4000 5300 4000 5150
+Wire Wire Line
+	4000 5150 3850 5150
+Wire Wire Line
+	3850 5150 3850 5050
+$Comp
+L GND #PWR?
+U 1 1 54F863F6
+P 3850 5150
+F 0 "#PWR?" H 3850 4900 60  0001 C CNN
+F 1 "GND" H 3850 5000 60  0000 C CNN
+F 2 "" H 3850 5150 60  0000 C CNN
+F 3 "" H 3850 5150 60  0000 C CNN
+	1    3850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5450 2750 5850
+Wire Wire Line
+	2750 5750 3200 5750
+Connection ~ 2750 5750
+Wire Wire Line
+	4200 4900 4100 4900
+Wire Wire Line
+	4100 4900 4100 5200
+Wire Wire Line
+	4100 5200 4150 5200
+Wire Wire Line
+	4700 4900 4850 4900
+Connection ~ 4850 4900
+Text HLabel 2500 4550 0    60   Output ~ 0
+REG+5V
+Wire Wire Line
+	3850 4650 3850 4550
+Connection ~ 3850 4550
+Wire Wire Line
+	5650 5300 5650 5350
+Connection ~ 5650 5300
+$Comp
+L Capacitor C?
+U 1 1 54F8640F
+P 2750 5200
+F 0 "C?" V 2600 5300 60  0000 L CNN
+F 1 "10uF" V 2700 5300 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2650 5200 60  0001 C CNN
+F 3 "" H 2750 5300 60  0001 C CNN
+F 4 "Taiyo Yuden" H 2750 5200 60  0001 C CNN "Manufacturer"
+F 5 "TMK316F106ZL-T" H 2750 5200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 2750 5200 60  0001 C CNN "Vendor"
+F 7 "587-1353-1-ND" H 2750 5200 60  0001 C CNN "Vendor Part #"
+F 8 "25V" V 2800 5300 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 2900 5300 50  0000 L CNN "Dielectric"
+	1    2750 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54F8641C
+P 5650 5600
+F 0 "C?" V 5500 5700 60  0000 L CNN
+F 1 "4.7uF" V 5600 5700 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5550 5600 60  0001 C CNN
+F 3 "" H 5650 5700 60  0001 C CNN
+F 4 "Taiyo Yuden" H 5650 5600 60  0001 C CNN "Manufacturer"
+F 5 "GMK316F475ZG-T" H 5650 5600 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 5650 5600 60  0001 C CNN "Vendor"
+F 7 "587-2254-1-ND" H 5650 5600 60  0001 C CNN "Vendor Part #"
+F 8 "35V" V 5700 5700 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 5800 5700 50  0000 L CNN "Dielectric"
+	1    5650 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 5850 5650 5900
+$Comp
+L Capacitor C?
+U 1 1 54F8642A
+P 4450 4900
+F 0 "C?" V 4300 5000 60  0000 L CNN
+F 1 "10nF" V 4400 5000 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4350 4900 60  0001 C CNN
+F 3 "" H 4450 5000 60  0001 C CNN
+F 4 "Kemet" H 4450 4900 60  0001 C CNN "Manufacturer"
+F 5 "C1206C103JARACTU" H 4450 4900 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4450 4900 60  0001 C CNN "Digi-Key"
+F 7 "399-7174-1-ND" H 4450 4900 60  0001 C CNN "Vendor Part #"
+F 8 "250V" V 4500 5000 50  0000 L CNN "Voltage"
+F 9 "X7R" V 4600 5000 50  0000 L CNN "Dielectric"
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5300 3100 4550
+Connection ~ 3100 4550
+$Comp
+L Inductor L?
+U 1 1 54F86439
+P 3500 4550
+F 0 "L?" V 3350 4650 60  0000 L CNN
+F 1 "2.2uH" V 3450 4650 60  0000 L CNN
+F 2 "MAVRIC_footprints:Yuden_SMD_Power_Inductor_6060" H 3400 4550 60  0001 C CNN
+F 3 "" H 3500 4650 60  0001 C CNN
+F 4 "Taiyo Yuden" H 3500 4550 60  0001 C CNN "Manufacturer"
+F 5 "NR6028T2R2N" H 3500 4550 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3500 4550 60  0001 C CNN "Vendor"
+F 7 "587-2098-1-ND" H 3500 4550 60  0001 C CNN "Vendor Part #"
+F 8 "3.7A" V 3550 4650 50  0000 L CNN "Current"
+F 9 "26mO" V 3650 4650 50  0000 L CNN "DCR"
+	1    3500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R?
+U 1 1 54F86446
+P 3450 5300
+F 0 "R?" V 3300 5400 60  0000 L CNN
+F 1 "49.9k" V 3400 5400 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 3350 5300 60  0001 C CNN
+F 3 "" H 3450 5400 60  0001 C CNN
+F 4 "Yageo" H 3450 5300 60  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-0749K9L" H 3450 5300 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3450 5300 60  0001 C CNN "Vendor"
+F 7 "311-49.9KFRCT-ND" H 3450 5300 60  0001 C CNN "Vendor Part #"
+F 8 "1/4W" V 3500 5400 50  0000 L CNN "Power"
+F 9 "1%" V 3600 5400 50  0000 L CNN "Tolerance"
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R?
+U 1 1 54F86453
+P 3450 5750
+F 0 "R?" V 3300 5850 60  0000 L CNN
+F 1 "9.53k" V 3400 5850 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 3350 5750 60  0001 C CNN
+F 3 "" H 3450 5850 60  0001 C CNN
+F 4 "Yageo" H 3450 5750 60  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-079K53L" H 3450 5750 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3450 5750 60  0001 C CNN "Vendor"
+F 7 "311-9.53KFRCT-ND" H 3450 5750 60  0001 C CNN "Vendor Part #"
+F 8 "1/4W" V 3500 5850 50  0000 L CNN "Power"
+F 9 "1%" V 3600 5850 50  0000 L CNN "Tolerance"
+	1    3450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 54F8645A
+P 6050 1800
+F 0 "#PWR?" H 6050 1650 60  0001 C CNN
+F 1 "+12V" H 6050 1940 60  0000 C CNN
+F 2 "" H 6050 1800 60  0000 C CNN
+F 3 "" H 6050 1800 60  0000 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AOZ1280CI U?
+U 1 1 54F86460
+P 4700 2550
+F 0 "U?" H 4500 2200 60  0000 C CNN
+F 1 "AOZ1280CI" H 4500 2700 60  0000 C CNN
+F 2 "SMD_Packages:SOT-23-6" H 4700 2550 60  0001 C CNN
+F 3 "" H 4700 2550 60  0000 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2650 6050 2650
+$Comp
+L GND #PWR?
+U 1 1 54F86468
+P 5650 3250
+F 0 "#PWR?" H 5650 3000 60  0001 C CNN
+F 1 "GND" H 5650 3100 60  0000 C CNN
+F 2 "" H 5650 3250 60  0000 C CNN
+F 3 "" H 5650 3250 60  0000 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2750 5400 2750
+Wire Wire Line
+	5400 2750 5400 2850
+Text HLabel 5400 2850 3    60   Input ~ 0
+REG+3V3EN
+Wire Wire Line
+	4850 1900 4850 2550
+Wire Wire Line
+	3750 1900 4850 1900
+Wire Wire Line
+	4150 2750 3700 2750
+Wire Wire Line
+	3700 2650 3700 3100
+Connection ~ 3700 2750
+Wire Wire Line
+	3100 2650 3200 2650
+$Comp
+L DIODESCH D?
+U 1 1 54F8647D
+P 3850 2200
+F 0 "D?" V 3950 2400 60  0000 R CNN
+F 1 "DIODESCH" H 3750 2550 50  0001 C CNN
+F 2 "MAVRIC_footprints:Diode_MicroSMP" H 3850 2200 60  0001 C CNN
+F 3 "" H 3850 2200 60  0000 C CNN
+F 4 "Vishay Semiconductor" H 3850 2200 60  0001 C CNN "Manufacturer"
+F 5 "MSS2P3-M3/89A" V 3850 2200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" V 3850 2200 60  0001 C CNN "Vendor"
+F 7 "MSS2P3-M3/89AGICT-ND" V 3850 2200 60  0001 C CNN "Vendor Part #"
+F 8 "30V" V 3850 2450 60  0000 R CNN "Reverse Voltage"
+F 9 "2A" V 3750 2400 60  0000 R CNN "Average Current"
+	1    3850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54F86484
+P 2750 3200
+F 0 "#PWR?" H 2750 2950 60  0001 C CNN
+F 1 "GND" H 2750 3050 60  0000 C CNN
+F 2 "" H 2750 3200 60  0000 C CNN
+F 3 "" H 2750 3200 60  0000 C CNN
+	1    2750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1900 3250 1900
+Wire Wire Line
+	2750 2300 2750 1900
+Connection ~ 2750 1900
+Wire Wire Line
+	4150 2650 4000 2650
+Wire Wire Line
+	4000 2650 4000 2500
+Wire Wire Line
+	4000 2500 3850 2500
+Wire Wire Line
+	3850 2500 3850 2400
+$Comp
+L GND #PWR?
+U 1 1 54F86491
+P 3850 2500
+F 0 "#PWR?" H 3850 2250 60  0001 C CNN
+F 1 "GND" H 3850 2350 60  0000 C CNN
+F 2 "" H 3850 2500 60  0000 C CNN
+F 3 "" H 3850 2500 60  0000 C CNN
+	1    3850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2800 2750 3200
+Wire Wire Line
+	2750 3100 3200 3100
+Connection ~ 2750 3100
+Wire Wire Line
+	4200 2250 4100 2250
+Wire Wire Line
+	4100 2250 4100 2550
+Wire Wire Line
+	4100 2550 4150 2550
+Wire Wire Line
+	4700 2250 4850 2250
+Connection ~ 4850 2250
+Text HLabel 2500 1900 0    60   Output ~ 0
+REG+3V3
+Wire Wire Line
+	3850 2000 3850 1900
+Connection ~ 3850 1900
+Wire Wire Line
+	5650 2650 5650 2700
+Connection ~ 5650 2650
+$Comp
+L Capacitor C?
+U 1 1 54F864AA
+P 2750 2550
+F 0 "C?" V 2600 2650 60  0000 L CNN
+F 1 "10uF" V 2700 2650 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2650 2550 60  0001 C CNN
+F 3 "" H 2750 2650 60  0001 C CNN
+F 4 "Taiyo Yuden" H 2750 2550 60  0001 C CNN "Manufacturer"
+F 5 "TMK316F106ZL-T" H 2750 2550 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 2750 2550 60  0001 C CNN "Vendor"
+F 7 "587-1353-1-ND" H 2750 2550 60  0001 C CNN "Vendor Part #"
+F 8 "25V" V 2800 2650 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 2900 2650 50  0000 L CNN "Dielectric"
+	1    2750 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54F864B7
+P 5650 2950
+F 0 "C?" V 5500 3050 60  0000 L CNN
+F 1 "4.7uF" V 5600 3050 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5550 2950 60  0001 C CNN
+F 3 "" H 5650 3050 60  0001 C CNN
+F 4 "Taiyo Yuden" H 5650 2950 60  0001 C CNN "Manufacturer"
+F 5 "GMK316F475ZG-T" H 5650 2950 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 5650 2950 60  0001 C CNN "Vendor"
+F 7 "587-2254-1-ND" H 5650 2950 60  0001 C CNN "Vendor Part #"
+F 8 "35V" V 5700 3050 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 5800 3050 50  0000 L CNN "Dielectric"
+	1    5650 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3200 5650 3250
+$Comp
+L Capacitor C?
+U 1 1 54F864C5
+P 4450 2250
+F 0 "C?" V 4300 2350 60  0000 L CNN
+F 1 "10nF" V 4400 2350 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4350 2250 60  0001 C CNN
+F 3 "" H 4450 2350 60  0001 C CNN
+F 4 "Kemet" H 4450 2250 60  0001 C CNN "Manufacturer"
+F 5 "C1206C103JARACTU" H 4450 2250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4450 2250 60  0001 C CNN "Digi-Key"
+F 7 "399-7174-1-ND" H 4450 2250 60  0001 C CNN "Vendor Part #"
+F 8 "250V" V 4500 2350 50  0000 L CNN "Voltage"
+F 9 "X7R" V 4600 2350 50  0000 L CNN "Dielectric"
+	1    4450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2650 3100 1900
+Connection ~ 3100 1900
+$Comp
+L Inductor L?
+U 1 1 54F864D4
+P 3500 1900
+F 0 "L?" V 3350 2000 60  0000 L CNN
+F 1 "2.2uH" V 3450 2000 60  0000 L CNN
+F 2 "MAVRIC_footprints:Yuden_SMD_Power_Inductor_6060" H 3400 1900 60  0001 C CNN
+F 3 "" H 3500 2000 60  0001 C CNN
+F 4 "Taiyo Yuden" H 3500 1900 60  0001 C CNN "Manufacturer"
+F 5 "NR6028T2R2N" H 3500 1900 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3500 1900 60  0001 C CNN "Vendor"
+F 7 "587-2098-1-ND" H 3500 1900 60  0001 C CNN "Vendor Part #"
+F 8 "3.7A" V 3550 2000 50  0000 L CNN "Current"
+F 9 "26mO" V 3650 2000 50  0000 L CNN "DCR"
+	1    3500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R?
+U 1 1 54F864E1
+P 3450 2650
+F 0 "R?" V 3300 2750 60  0000 L CNN
+F 1 "49.9k" V 3400 2750 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 3350 2650 60  0001 C CNN
+F 3 "" H 3450 2750 60  0001 C CNN
+F 4 "Yageo" H 3450 2650 60  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-0749K9L" H 3450 2650 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3450 2650 60  0001 C CNN "Vendor"
+F 7 "311-49.9KFRCT-ND" H 3450 2650 60  0001 C CNN "Vendor Part #"
+F 8 "1/4W" V 3500 2750 50  0000 L CNN "Power"
+F 9 "1%" V 3600 2750 50  0000 L CNN "Tolerance"
+	1    3450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R?
+U 1 1 54F864EE
+P 3450 3100
+F 0 "R?" V 3300 3200 60  0000 L CNN
+F 1 "15.8k" V 3400 3200 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 3350 3100 60  0001 C CNN
+F 3 "" H 3450 3200 60  0001 C CNN
+F 4 "Yageo" H 3450 3100 60  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-0715K8L" H 3450 3100 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 3450 3100 60  0001 C CNN "Vendor"
+F 7 "311-15.8KFRCT-ND" H 3450 3100 60  0001 C CNN "Vendor Part #"
+F 8 "1/4W" V 3500 3200 50  0000 L CNN "Power"
+F 9 "1%" V 3600 3200 50  0000 L CNN "Tolerance"
+	1    3450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5300 6050 1800
+Connection ~ 6050 2650
+$EndSCHEMATC
