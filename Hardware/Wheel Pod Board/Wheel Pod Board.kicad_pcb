@@ -2,7 +2,7 @@
 
   (general
     (links 78)
-    (no_connects 77)
+    (no_connects 78)
     (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
@@ -1658,7 +1658,7 @@
   )
 
   (module Connect:RJ45_8 (layer F.Cu) (tedit 54F8BE0B) (tstamp 54F8C078)
-    (at 0 0)
+    (at 238.6 138.2)
     (tags RJ45)
     (path /54FA3CB5)
     (fp_text reference J1 (at 0.254 4.826) (layer F.SilkS)
@@ -1697,7 +1697,7 @@
   )
 
   (module MAVRIC_footprints:1x2_SMD_header (layer F.Cu) (tedit 54CB110D) (tstamp 54F8C07E)
-    (at 0 0)
+    (at 200.2 135.4)
     (path /54F941ED)
     (fp_text reference P5 (at 0 -4) (layer F.SilkS) hide
       (effects (font (size 1.5 1.5) (thickness 0.15)))
@@ -1730,7 +1730,7 @@
   )
 
   (module MAVRIC_footprints:1x2_SMD_header (layer F.Cu) (tedit 54CB110D) (tstamp 54F8C084)
-    (at 0 0)
+    (at 174.6 146.2)
     (path /54F99637)
     (fp_text reference P6 (at 0 -4) (layer F.SilkS) hide
       (effects (font (size 1.5 1.5) (thickness 0.15)))
