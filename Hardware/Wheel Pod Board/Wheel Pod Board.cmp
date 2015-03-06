@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/5/2015 2:35:07 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/5/2015 8:24:00 PM
 
 BeginCmp
 TimeStamp = /54F86977;
@@ -158,7 +158,7 @@ BeginCmp
 TimeStamp = /54FA3CB5;
 Reference = J1;
 ValeurCmp = Conn_RJ-45;
-IdModule  = Connect:RJ45_8;
+IdModule  = MAVRIC_footprints:Molex_RJ45_0437438101;
 EndCmp
 
 BeginCmp
@@ -194,13 +194,6 @@ TimeStamp = /54F85764;
 Reference = P3;
 ValeurCmp = ST_SWD_Connector;
 IdModule  = MAVRIC_footprints:1x6_SMD_header;
-EndCmp
-
-BeginCmp
-TimeStamp = /54F8575C;
-Reference = P4;
-ValeurCmp = RS485;
-IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
@@ -291,35 +284,35 @@ BeginCmp
 TimeStamp = /54F80B75;
 Reference = U2;
 ValeurCmp = SN75176BDR;
-IdModule  = SMD_Packages:SOIC-8-W;
+IdModule  = Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F83F88;
 Reference = U3;
 ValeurCmp = ZXCT1107;
-IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Handsoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F97266;
 Reference = U4;
 ValeurCmp = ZXCT1107;
-IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Handsoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F84B5A/54F86460;
 Reference = U5;
 ValeurCmp = AOZ1280CI;
-IdModule  = SMD_Packages:SOT-23-6;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F84B5A/54F863C5;
 Reference = U6;
 ValeurCmp = AOZ1280CI;
-IdModule  = SMD_Packages:SOT-23-6;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6;
 EndCmp
 
 BeginCmp
