@@ -1126,8 +1126,6 @@ F 3 "" H 1450 -450 60  0000 C CNN
 	1    1450 1150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1650 1150
-NoConn ~ 1650 1250
 NoConn ~ 1650 1450
 NoConn ~ 1650 1550
 NoConn ~ 1650 1650
@@ -1135,8 +1133,6 @@ NoConn ~ 1650 1750
 NoConn ~ 1650 1850
 NoConn ~ 1650 2250
 NoConn ~ 1650 2350
-NoConn ~ 1650 2450
-NoConn ~ 1650 2550
 NoConn ~ 1650 2650
 NoConn ~ 1650 3000
 NoConn ~ 1650 3100
@@ -1191,12 +1187,12 @@ Wire Wire Line
 Wire Wire Line
 	1650 4200 1800 4200
 $Comp
-L SERVO P?
+L SERVO P4
 U 1 1 54FB2C02
 P 10150 3850
-F 0 "P?" H 10150 4050 50  0000 C CNN
+F 0 "P4" H 10150 4050 50  0000 C CNN
 F 1 "SyRen" H 10150 3650 50  0000 C CNN
-F 2 "" H 10150 3850 60  0000 C CNN
+F 2 "MAVRIC_footprints:1x3_SMD_header" H 10150 3850 60  0001 C CNN
 F 3 "" H 10150 3850 60  0000 C CNN
 	1    10150 3850
 	1    0    0    -1  
@@ -1209,4 +1205,20 @@ Wire Wire Line
 	9850 4200 9950 4200
 Text Label 9950 4200 0    60   ~ 0
 USART2_TX
+Text Label 1800 2550 0    60   ~ 0
+SWCLK
+Wire Wire Line
+	1800 2550 1650 2550
+Text Label 1800 2450 0    60   ~ 0
+SWDIO
+Wire Wire Line
+	1800 2450 1650 2450
+Text Label 1800 1150 0    60   ~ 0
+StepperCurrent
+Text Label 1800 1250 0    60   ~ 0
+SyRenCurrent
+Wire Wire Line
+	1650 1250 1800 1250
+Wire Wire Line
+	1800 1150 1650 1150
 $EndSCHEMATC
