@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/5/2015 9:06:33 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/5/2015 9:20:30 PM
 
 BeginCmp
 TimeStamp = /54F86977;
@@ -130,14 +130,14 @@ BeginCmp
 TimeStamp = /54FB2C02;
 Reference = P4;
 ValeurCmp = SyRen;
-IdModule  = MAVRIC_footprints:1x3_SMD_header;
+IdModule  = Wire_Pads:SolderWirePad_3x_0-8mmDrill;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F941ED;
 Reference = P5;
 ValeurCmp = BATT;
-IdModule  = MAVRIC_footprints:1x2_SMD_header;
+IdModule  = Wire_Pads:SolderWirePad_2x_0-8mmDrill;
 EndCmp
 
 BeginCmp
