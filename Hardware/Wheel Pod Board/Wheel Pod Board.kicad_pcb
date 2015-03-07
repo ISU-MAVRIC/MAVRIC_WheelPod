@@ -3,7 +3,7 @@
   (general
     (links 81)
     (no_connects 0)
-    (area 219.649999 128.749999 283.250001 154.350001)
+    (area 219.649999 128.4718 283.805001 155.7032)
     (thickness 1.6)
     (drawings 5)
     (tracks 341)
@@ -62,12 +62,12 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.524 4.318)
+    (pad_size 7.62 2.54)
     (pad_drill 0)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (grid_origin 153.2 103.8)
-    (visible_elements 7FFFFF7F)
+    (visible_elements 7FFFFD7F)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions true)
@@ -1241,7 +1241,7 @@
     )
   )
 
-  (module Wire_Pads:SolderWirePad_3x_0-8mmDrill (layer B.Cu) (tedit 54FB6F79) (tstamp 54F92CAD)
+  (module Wire_Pads:SolderWirePad_3x_0-8mmDrill (layer B.Cu) (tedit 54FB7668) (tstamp 54F92CAD)
     (at 270.7 148.8 180)
     (path /54FB2C02)
     (fp_text reference P4 (at -4.5 3.5 180) (layer B.SilkS) hide
@@ -1254,7 +1254,7 @@
       (net 39 GND))
     (pad 2 smd rect (at 0 0 180) (size 6.35 10.16) (layers B.Cu B.Paste B.Mask)
       (net 63 "Net-(P4-Pad2)"))
-    (pad 3 smd rect (at -8.25 -3.75 180) (size 7.62 2.54) (layers F.Cu B.Paste B.Mask)
+    (pad 3 smd rect (at -8.25 -3.75 180) (size 7.62 2.54) (layers F.Cu F.Paste F.Mask)
       (net 64 /USART2_TX))
   )
 
