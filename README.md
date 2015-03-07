@@ -11,3 +11,7 @@ Current Price: $17.80 for 3 boards, $5.93 each
 
 <img src="https://raw.githubusercontent.com/ISU-MAVRIC/MAVRIC_WheelPod/master/Hardware/Wheel%20Pod%20Board/Images/front%20osh.png" alt="'Wheel Pod Board Front"><br>
 <img src="https://raw.githubusercontent.com/ISU-MAVRIC/MAVRIC_WheelPod/master/Hardware/Wheel%20Pod%20Board/Images/back%20osh.png" alt="Wheel Pod Board Back">
+
+### Grid Settings
+- .5mm layout
+- .5mm traces when possible, down to .25mm for detailed routing
