@@ -481,7 +481,7 @@ U 1 1 54F85764
 P 9200 5950
 F 0 "P3" H 9200 6300 50  0000 C CNN
 F 1 "ST_SWD_Connector" H 9200 5600 50  0000 C CNN
-F 2 "MAVRIC_footprints:SolderWirePad_6xInline_0-8mmDrill" H 9200 5950 60  0001 C CNN
+F 2 "MAVRIC_footprints:1x6_SMD_header" H 9200 5950 60  0001 C CNN
 F 3 "" H 9200 5950 60  0000 C CNN
 	1    9200 5950
 	1    0    0    -1  
@@ -1122,7 +1122,6 @@ NoConn ~ 1650 1750
 NoConn ~ 1650 1850
 NoConn ~ 1650 2250
 NoConn ~ 1650 2350
-NoConn ~ 1650 2650
 NoConn ~ 1650 3000
 NoConn ~ 1650 3100
 NoConn ~ 1650 3200
@@ -1212,4 +1211,10 @@ Wire Wire Line
 	1800 1150 1650 1150
 Text Label 7600 5650 2    60   ~ 0
 Stp+12V
+Wire Wire Line
+	1650 2650 1800 2650
+Text Label 1800 2650 0    60   ~ 0
+TX_EN
+Text Label 1750 7000 2    60   ~ 0
+TX_EN
 $EndSCHEMATC
