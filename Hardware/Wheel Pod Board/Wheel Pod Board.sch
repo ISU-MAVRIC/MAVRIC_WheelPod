@@ -481,7 +481,7 @@ U 1 1 54F85764
 P 9200 5950
 F 0 "P3" H 9200 6300 50  0000 C CNN
 F 1 "ST_SWD_Connector" H 9200 5600 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x6_SMD_header" H 9200 5950 60  0001 C CNN
+F 2 "MAVRIC_footprints:SolderWirePad_6xInline_0-8mmDrill" H 9200 5950 60  0001 C CNN
 F 3 "" H 9200 5950 60  0000 C CNN
 	1    9200 5950
 	1    0    0    -1  
