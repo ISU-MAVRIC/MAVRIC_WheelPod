@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/7/2015 12:40:08 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/7/2015 9:28:07 PM
 
 BeginCmp
 TimeStamp = /54F86977;
@@ -92,6 +92,20 @@ IdModule  = Capacitors_SMD:C_1206_HandSoldering;
 EndCmp
 
 BeginCmp
+TimeStamp = /54FBC1C4;
+Reference = D1;
+ValeurCmp = LED Red;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FBDF6F;
+Reference = D2;
+ValeurCmp = LED Green;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
 TimeStamp = /54F82778;
 Reference = FB1;
 ValeurCmp = 50O;
@@ -172,6 +186,20 @@ BeginCmp
 TimeStamp = /54F97272;
 Reference = R5;
 ValeurCmp = 7m;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FBC795;
+Reference = R6;
+ValeurCmp = 100;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FBDFC1;
+Reference = R7;
+ValeurCmp = 100;
 IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 

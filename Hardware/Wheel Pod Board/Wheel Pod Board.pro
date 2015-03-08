@@ -1,4 +1,4 @@
-update=3/5/2015 8:21:00 PM
+update=3/7/2015 9:15:53 PM
 version=1
 last_client=kicad
 [general]
@@ -8,16 +8,6 @@ BoardNm=
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=power
-LibName2=device
-LibName3=conn
-LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
-LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
-LibName6=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Connectors
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -38,3 +28,14 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+LibName1=power
+LibName2=device
+LibName3=conn
+LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
+LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+LibName6=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Connectors
+LibName7=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Actives
