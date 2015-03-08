@@ -157,9 +157,7 @@ Wire Wire Line
 	6100 1400 5950 1400
 Connection ~ 6100 1400
 Wire Wire Line
-	5950 1800 6100 1800
-Wire Wire Line
-	6100 1800 6800 1800
+	5950 1800 6800 1800
 Connection ~ 6100 1800
 Wire Wire Line
 	6100 1600 5950 1600
@@ -180,21 +178,9 @@ Wire Wire Line
 Connection ~ 6600 1300
 Connection ~ 6600 1100
 Wire Wire Line
-	6100 1200 6100 1400
+	6100 1200 6100 1800
 Wire Wire Line
-	6100 1400 6100 1600
-Wire Wire Line
-	6100 1600 6100 1800
-Wire Wire Line
-	6600 1000 6600 1100
-Wire Wire Line
-	6600 1100 6600 1300
-Wire Wire Line
-	6600 1300 6600 1500
-Wire Wire Line
-	6600 1500 6600 1700
-Wire Wire Line
-	6600 1700 6600 1900
+	6600 1000 6600 1900
 Wire Wire Line
 	5950 2600 6100 2600
 Wire Wire Line
@@ -244,9 +230,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 7100 2500 7100
 Wire Wire Line
-	1750 7000 2350 7000
-Wire Wire Line
-	2350 7000 2500 7000
+	1750 7000 2500 7000
 Wire Wire Line
 	2500 7200 2350 7200
 Wire Wire Line
@@ -437,9 +421,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 1650 9900 1750
 Wire Wire Line
-	7500 1500 7500 1650
-Wire Wire Line
-	7500 1650 7500 1750
+	7500 1500 7500 1750
 Connection ~ 7500 1650
 Wire Wire Line
 	7900 1650 7900 1750
@@ -460,17 +442,13 @@ Wire Wire Line
 	9900 2350 9900 2250
 Connection ~ 9900 2350
 Wire Wire Line
-	10400 1550 10400 1650
-Wire Wire Line
-	10400 1650 10400 1750
+	10400 1550 10400 1750
 Connection ~ 9900 1650
 Connection ~ 10400 1650
 Wire Wire Line
 	10800 1650 10800 1750
 Wire Wire Line
-	10800 2250 10800 2350
-Wire Wire Line
-	10800 2350 10800 2450
+	10800 2250 10800 2450
 Wire Wire Line
 	10400 2350 10400 2250
 Connection ~ 10400 2350
@@ -493,35 +471,9 @@ Connection ~ 10800 2350
 Wire Wire Line
 	10400 1650 10800 1650
 Wire Wire Line
-	7500 2350 7900 2350
+	7500 2350 10800 2350
 Wire Wire Line
-	7900 2350 8300 2350
-Wire Wire Line
-	8300 2350 8700 2350
-Wire Wire Line
-	8700 2350 9100 2350
-Wire Wire Line
-	9100 2350 9500 2350
-Wire Wire Line
-	9500 2350 9900 2350
-Wire Wire Line
-	9900 2350 10400 2350
-Wire Wire Line
-	10400 2350 10800 2350
-Wire Wire Line
-	7350 1650 7500 1650
-Wire Wire Line
-	7500 1650 7900 1650
-Wire Wire Line
-	7900 1650 8300 1650
-Wire Wire Line
-	8300 1650 8700 1650
-Wire Wire Line
-	8700 1650 9100 1650
-Wire Wire Line
-	9100 1650 9500 1650
-Wire Wire Line
-	9500 1650 9900 1650
+	7350 1650 9900 1650
 Wire Wire Line
 	7350 1500 7350 1650
 $Comp
@@ -530,7 +482,7 @@ U 1 1 54F85764
 P 9200 5950
 F 0 "P3" H 9200 6300 50  0000 C CNN
 F 1 "ST_SWD_Connector" H 9200 5600 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x6_SMD_header" H 9200 5950 60  0001 C CNN
+F 2 "MAVRIC_footprints:1x6_Breakaway_Header" H 9200 5950 60  0001 C CNN
 F 3 "" H 9200 5950 60  0000 C CNN
 	1    9200 5950
 	1    0    0    -1  
@@ -650,23 +602,17 @@ OSC_IN
 Text Label 4750 1500 0    60   ~ 0
 OSC_OUT
 Wire Wire Line
-	3950 1500 3950 1800
-Wire Wire Line
-	3950 1800 3950 1950
+	3950 1500 3950 1950
 Wire Wire Line
 	3950 1800 4100 1800
 Wire Wire Line
 	4600 1800 4750 1800
 Wire Wire Line
-	4750 1500 4750 1800
-Wire Wire Line
-	4750 1800 4750 1950
+	4750 1500 4750 1950
 Wire Wire Line
 	3950 2450 3950 2600
 Wire Wire Line
-	3950 2600 4350 2600
-Wire Wire Line
-	4350 2600 4750 2600
+	3950 2600 4750 2600
 Wire Wire Line
 	4750 2600 4750 2450
 Wire Wire Line
@@ -680,7 +626,7 @@ U 1 1 54F82F52
 P 7950 5900
 F 0 "P1" H 7950 6250 50  0000 C CNN
 F 1 "UIM240XX_Stepper_Conn" H 7550 5550 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x6_SMD_header" H 7950 5900 60  0001 C CNN
+F 2 "MAVRIC_footprints:1x6_Breakaway_Header" H 7950 5900 60  0001 C CNN
 F 3 "" H 7950 5900 60  0000 C CNN
 	1    7950 5900
 	1    0    0    -1  
@@ -777,18 +723,14 @@ Wire Wire Line
 Wire Wire Line
 	7450 4050 7450 4250
 Wire Wire Line
-	6450 4350 6550 4350
-Wire Wire Line
-	6550 4350 6800 4350
+	6450 4350 6800 4350
 Wire Wire Line
 	6550 4450 6550 4350
 Connection ~ 6550 4350
 Wire Wire Line
 	7850 3900 7800 3900
 Wire Wire Line
-	7250 3600 7250 3900
-Wire Wire Line
-	7250 3900 7250 4050
+	7250 3600 7250 4050
 Wire Wire Line
 	7300 3900 7250 3900
 Connection ~ 7250 3900
@@ -804,9 +746,7 @@ F 3 "" H 4350 7400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 7300 4650 7300
-Wire Wire Line
-	4650 7300 5000 7300
+	4350 7300 5000 7300
 $Comp
 L PWR_FLAG #FLG011
 U 1 1 54F89ADE
@@ -852,9 +792,7 @@ F 3 "" H 6700 3550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7850 3850 7850 3900
-Wire Wire Line
-	7850 3900 7850 4050
+	7850 3850 7850 4050
 Wire Wire Line
 	6550 4950 6550 5050
 Wire Wire Line
@@ -864,13 +802,7 @@ Wire Wire Line
 Text Label 6450 4350 2    60   ~ 0
 StepperCurrent
 Wire Wire Line
-	6900 3600 7050 3600
-Wire Wire Line
-	7050 3600 7250 3600
-Wire Wire Line
-	7250 3600 9150 3600
-Wire Wire Line
-	9150 3600 10700 3600
+	6900 3600 10700 3600
 $Comp
 L ZXCT1107 U4
 U 1 1 54F97266
@@ -936,18 +868,14 @@ Wire Wire Line
 Wire Wire Line
 	9350 4050 9350 4250
 Wire Wire Line
-	8350 4350 8450 4350
-Wire Wire Line
-	8450 4350 8700 4350
+	8350 4350 8700 4350
 Wire Wire Line
 	8450 4450 8450 4350
 Connection ~ 8450 4350
 Wire Wire Line
 	9750 3900 9700 3900
 Wire Wire Line
-	9150 3600 9150 3900
-Wire Wire Line
-	9150 3900 9150 4050
+	9150 3600 9150 4050
 Wire Wire Line
 	9200 3900 9150 3900
 Connection ~ 9150 3900
@@ -960,11 +888,7 @@ Wire Wire Line
 Text Label 8350 4350 2    60   ~ 0
 SyRenCurrent
 Wire Wire Line
-	6900 3500 7050 3500
-Wire Wire Line
-	7050 3500 9750 3500
-Wire Wire Line
-	9750 3500 10950 3500
+	6900 3500 10950 3500
 Wire Wire Line
 	10950 3500 10950 3800
 $Comp
@@ -982,9 +906,7 @@ Wire Wire Line
 	7850 3850 7950 3850
 Connection ~ 7250 3600
 Wire Wire Line
-	9750 3850 9750 3900
-Wire Wire Line
-	9750 3900 9750 4050
+	9750 3850 9750 4050
 Wire Wire Line
 	9750 3850 9950 3850
 Connection ~ 9750 3900
@@ -1081,7 +1003,7 @@ U 1 1 54FB0485
 P 10800 5950
 F 0 "P2" H 10800 6150 50  0000 C CNN
 F 1 "RS232" H 10800 5750 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x3_SMD_header" H 10800 5950 60  0001 C CNN
+F 2 "MAVRIC_footprints:1x3_Breakaway_Header" H 10800 5950 60  0001 C CNN
 F 3 "" H 10800 5950 60  0000 C CNN
 	1    10800 5950
 	1    0    0    -1  
@@ -1123,18 +1045,14 @@ $EndComp
 Wire Wire Line
 	3550 7000 3550 6800
 Wire Wire Line
-	3550 6800 4000 6800
-Wire Wire Line
-	4000 6800 4200 6800
+	3550 6800 4200 6800
 Wire Wire Line
 	4200 6800 4200 7000
 Connection ~ 4000 6800
 Wire Wire Line
 	3550 7100 3550 7300
 Wire Wire Line
-	3550 7300 4000 7300
-Wire Wire Line
-	4000 7300 4200 7300
+	3550 7300 4200 7300
 Wire Wire Line
 	4200 7300 4200 7100
 Connection ~ 4000 7300
@@ -1142,9 +1060,7 @@ Wire Wire Line
 	4650 7350 4650 7300
 Connection ~ 4650 7300
 Wire Wire Line
-	4400 6900 4650 6900
-Wire Wire Line
-	4650 6900 5000 6900
+	4400 6900 5000 6900
 $Comp
 L PWR_FLAG #FLG023
 U 1 1 54F9E182
@@ -1162,9 +1078,7 @@ Connection ~ 4650 6900
 Wire Wire Line
 	5000 7200 4850 7200
 Wire Wire Line
-	4850 7200 4850 7400
-Wire Wire Line
-	4850 7400 4850 7500
+	4850 7200 4850 7500
 Wire Wire Line
 	5000 7400 4850 7400
 Connection ~ 4850 7400
