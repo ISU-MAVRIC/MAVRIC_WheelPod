@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/8/2015 12:13:39 AM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 3/8/2015 8:59:31 PM
 
 BeginCmp
 TimeStamp = /54F86977;
@@ -117,6 +117,13 @@ TimeStamp = /54FA3CB5;
 Reference = J1;
 ValeurCmp = Conn_RJ-45;
 IdModule  = MAVRIC_footprints:Molex_RJ45_0437438101;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD025C;
+Reference = J2;
+ValeurCmp = M3 Encoder;
+IdModule  = Wire_Pads:SolderWirePad_3x_0-8mmDrill;
 EndCmp
 
 BeginCmp

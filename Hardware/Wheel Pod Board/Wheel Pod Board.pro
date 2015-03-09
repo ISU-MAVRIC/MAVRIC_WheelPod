@@ -1,10 +1,6 @@
-update=3/7/2015 9:15:53 PM
+update=3/8/2015 8:51:53 PM
 version=1
 last_client=kicad
-[general]
-version=1
-RootSch=
-BoardNm=
 [cvpcb]
 version=1
 NetIExt=net
@@ -39,3 +35,5 @@ LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
 LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
 LibName6=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Connectors
 LibName7=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Actives
+[general]
+version=1
