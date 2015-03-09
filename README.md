@@ -4,6 +4,8 @@ MAVRIC_WheelPod
 Wheel pod electrical control system.
 
 ##PCB Progress:
+### Wheel Pod Board v1.0 ordered!
+https://github.com/ISU-MAVRIC/MAVRIC_WheelPod/releases/tag/v1.0
 
 Current Price: $12.60 for 3 boards, $4.20 each
 
