@@ -1224,7 +1224,7 @@ F 3 "" H 2250 6050 60  0000 C CNN
 F 4 "Digi-Key" H 2250 6050 60  0001 C CNN "Vendor"
 F 5 "475-1415-1-ND" H 2250 6050 60  0001 C CNN "Vendor Part #"
 	1    2250 6050
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L Resistor R6
@@ -1264,7 +1264,7 @@ F 3 "" H 2250 6350 60  0000 C CNN
 F 4 "Digi-Key" H 2250 6350 60  0001 C CNN "Vendor"
 F 5 "475-1410-1-ND" H 2250 6350 60  0001 C CNN "Vendor Part #"
 	1    2250 6350
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2000 6350 2050 6350
