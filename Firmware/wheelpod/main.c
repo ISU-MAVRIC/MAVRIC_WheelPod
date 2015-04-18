@@ -44,6 +44,10 @@ int main(void) {
 
 	RCC_MCO1Config(RCC_MCO1Source_HSE, RCC_MCO1Div_1);
 
+	//TIM5's clock is set to 2x the APB1 Clock
+	//Since the APB1 clock is 42MHz, our TIM5 clock is 84MHz
+	//We want to prescale this to something a little bit more
+	//user friendly.
 
 	int PrescalerValue = ((SystemCoreClock / 2) / 21000000) - 1;
 
@@ -55,7 +59,6 @@ int main(void) {
 
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
-	TIM_OCInitStructure.TIM_Pulse = 333;
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
 
 	TIM_OC3Init(TIM5, &TIM_OCInitStructure);
