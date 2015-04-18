@@ -9,3 +9,4 @@ Hardware/Wheel Pod Board/Export/Export.zip
 *.comarker
 *.coproj
 bin/
+*.xml

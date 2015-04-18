@@ -49,10 +49,8 @@ int main(void) {
 	//We want to prescale this to something a little bit more
 	//user friendly.
 
-	int PrescalerValue = ((SystemCoreClock / 2) / 21000000) - 1;
-
-	TIM_TimeBaseStructure.TIM_Period = 665;
-	TIM_TimeBaseStructure.TIM_Prescaler = PrescalerValue;
+	TIM_TimeBaseStructure.TIM_Period = 20000;
+	TIM_TimeBaseStructure.TIM_Prescaler = 15;
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0;
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIM5, &TIM_TimeBaseStructure);
@@ -60,6 +58,7 @@ int main(void) {
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+	TIM_OCInitStructure.TIM_Pulse = 1500;
 
 	TIM_OC3Init(TIM5, &TIM_OCInitStructure);
 	TIM_OC3PreloadConfig(TIM5, TIM_OCPreload_Enable);
