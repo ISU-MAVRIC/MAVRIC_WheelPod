@@ -1,7 +1,15 @@
 MAVRIC_WheelPod
 ===============
 
-Wheel pod electrical control system.
+Each MAVRIC Wheel Pod contains a motor controller driving the wheel along with a stepper to rotate the entire pod, steering the rover. This board controls these components in a compact, modular form factor. One will be located at each of the six wheel pods.
+
+**Features:**
+- STM32F4 Microcontroller
+- PWM output to motor driver controlling wheel speed
+- Current measurement on motor driver to measure wheel traction
+- Stepper motor output to rotate the wheel pod, steering the rover
+- Encoder analog in for steering position feedback, fed into a control loop
+- RJ45 Jack for rx/tx control/status data as well as powering the wheel pod's 3V3 and 5V rails
 
 ##PCB Progress:
 ### Wheel Pod Board v1.0 ordered!
